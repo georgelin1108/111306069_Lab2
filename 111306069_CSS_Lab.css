@@ -1,0 +1,85 @@
+/* General body styling */
+body {
+    color: white;
+    background-color: teal;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: lightgreen;
+}
+
+/* Navbar styling */
+.navbar {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.nav-item {
+    margin: 0 15px;
+    color: white;
+}
+
+/* Styling for the 'Service' dropdown */
+.service {
+    display: flex;
+    align-items: center;
+}
+
+.service-label {
+    cursor: pointer;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.service-select {
+    display: none;
+    margin-left: 10px;
+}
+
+/* Show the select dropdown when checkbox is checked */
+.toggle-checkbox:checked + .service-select {
+    display: block;
+}
+
+/* Hide the label when dropdown is shown */
+.toggle-checkbox:checked + .service-select + .service-label {
+    display: none;
+}
+
+/* Content box styling */
+.content-box {
+    flex: 1;
+    padding: 10px;
+    background-color: #201f1f;
+    margin-right: 10px;
+}
+
+/* Image styling */
+img {
+    background-color: rgb(204, 161, 161);
+    height: 150px;
+    width: auto%;
+    object-fit: cover;
+}
+
+/* Media queries */
+@media all {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media print {
+    body {
+        font-size: 0.8em;
+    }
+}
